@@ -3,7 +3,7 @@ import { useState, useEffect } from "react"
 function Whiskey() {
 
     const [drink, setDrink] = useState([]);
-    
+
     useEffect(()=>{
         fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=whiskey`)
         .then(res=>res.json())
@@ -11,7 +11,6 @@ function Whiskey() {
         .catch(err=>console.log(err));
 
     },[]);
-
 
   return (
     <div>
@@ -30,7 +29,6 @@ function Whiskey() {
                         <li>{drink.strAlcoholic}</li>
                         <li>{drink.strGlass}</li>
                     </ul>
-
                 </div>
                 <div className="card-actions justify-end">
                 <a href={drink.strVideo} target="_blank"><button className="btn bg-lime-500 border-lime-500">Videó</button></a>
