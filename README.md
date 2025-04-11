@@ -1,1 +1,1 @@
-# 14d_gyakorlas
+# 14d git gyakorlás
