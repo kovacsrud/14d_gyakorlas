@@ -1,8 +1,6 @@
 import Whiskey from "./components/Whiskey"
 
 function App() {
- 
-
   return (
     <div>
       <h1 className="text-3xl font-bold text-center text-sky-800">Git gyakorlás</h1>
